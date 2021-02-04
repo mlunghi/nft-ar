@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+# Location Based AR Tutorial - AR.js v2.0.x
 
-You can use the [editor on GitHub](https://github.com/mlunghi/nft-ar/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+<img src="https://miro.medium.com/max/2476/1*IymrgzbXR9j7TCqT3GSLNg.png">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+These three, basic projects are used on [this tutorial](https://medium.com/chialab-open-source/build-your-location-based-augmented-reality-web-app-c2442e716564) about Location Based Augmented Reality on the Web, using AR.js v2.0.x.
 
-### Markdown
+* dynamic-places: places are added with remote APIs fetch, using Foursquare APIs. Need configuration (client id and client secret)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* static-on-html: places are added using a static array via script: you have to manually insert valid gps coordinates in order to see places near you
 
-```markdown
-Syntax highlighted code block
+*  only-html: add one (ore more) place using only a single HTML file. Needs manual addition of valid coordinates.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mlunghi/nft-ar/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Have fun! 🌍
