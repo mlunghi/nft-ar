@@ -27,12 +27,12 @@ var models = [
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
     },
-    {
-        url: './assets/articuno/scene.gltf',
-        scale: '0.8 0.8 0.8',
-        rotation: '0 180 0',
-        info: 'Articuno, Lv. 80, HP 100/100',
-    },
+    // {
+    //     url: './assets/articuno/scene.gltf',
+    //     scale: '0.8 0.8 0.8',
+    //     rotation: '0 180 0',
+    //     info: 'Articuno, Lv. 80, HP 100/100',
+    // },
     {
         url: './assets/dragonite/scene.gltf',
         scale: '0.08 0.08 0.08',
