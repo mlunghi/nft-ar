@@ -13,25 +13,41 @@
     </script>
 </head>
 
+
 <body style='margin: 0; overflow: hidden;'>
+    <div class="centered instructions"></div>
     <a-scene
+        vr-mode-ui='enabled: false'
+        embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+    <a-camera gps-camera rotation-reader></a-camera>
+    <a-entity gltf-model="./assets/ata/scene.gltf" rotation="0 180 0" scale="0.8 0.8 0.8" gps-entity-place="latitude: 45.0970490; longitude: 8.7436095;" animation-mixer/>
+
+</a-scene>
+<div class="centered">
+    <button data-action="change"></button>
+</div>
+</body>
+
+
+    <!-- <a-scene
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+         <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
         <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
         <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
 
         <!-- <a-entity gps-entity-place="latitude: 8.7436701; longitude: 45.0970509;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
         <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/ata/file.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
         <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/ata/deney.usdz" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
-        <a-camera gps-camera rotation-reader></a-camera>
+        <!-- <a-camera gps-camera rotation-reader></a-camera> -->
 
         <!-- matteo coors -->
         <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970490; longitude: 8.7436095;" animation-mixer/> -->
-        <a-entity gltf-model="./assets/ata/scene.gltf" rotation="0 180 0" scale="0.8 0.8 0.8" gps-entity-place="latitude: 45.0970490; longitude: 8.7436095;" />
+        <!-- <a-entity gltf-model="./assets/ata/scene.gltf" rotation="0 180 0" scale="0.8 0.8 0.8" gps-entity-place="latitude: 45.0970490; longitude: 8.7436095;" animation-mixer/> -->
 
-        <a-scene  embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline>
+        <!-- <a-scene  embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline> -->
         <!-- <a-entity gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970196; longitude: 8.7437325;" animation-mixer/> -->
         <!-- <a-entity gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0968255; longitude: 8.7436986;" animation-mixer/> -->
         <!-- <a-entity gltf-model="./assets/ata/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970525; longitude: 8.743560;" animation-mixer/>
@@ -43,7 +59,7 @@
 
 
 
-        <!-- <a-entity gltf-model="./assets/ata/file.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
+         <a-entity gltf-model="./assets/ata/file.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
         <!-- <a-entity gltf-model="./assets/ata/deney.usdz" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
 
         <!-- ata coors -->
@@ -54,6 +70,3 @@
         <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 52.5359569; longitude: 13.4231197;" animation-mixer/> -->
         <!-- <a-entity gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 52.5359514; longitude: 13.4231656;" animation-mixer/> -->
         <!-- <a-entity gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 52.5359600; longitude: 13.4231462;" animation-mixer/> -->
-
-  </a-scene>
-</body>
