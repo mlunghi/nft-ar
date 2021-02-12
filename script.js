@@ -40,8 +40,8 @@ var models = [
         info: 'Dragonite, Lv. 99, HP 150/150',
     },
     {
-        url: './assets/ata/art deco style sculpture gg.gltf',
-        scale: '0.08 0.08 0.08',
+        url: './assets/ata/scene.gltf',
+        scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Ataberk Friend1 Stature',
     },
