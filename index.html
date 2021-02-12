@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <!-- we import arjs version without NFT but with marker + location based support -->
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-marker preset="hiro">
-        <a-entity
-          position="0 0 0"
-          scale="1 1 1"
-          gltf-model="./assets/articuno/scene.gltf"
-        ></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
-</html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GeoAR.js demo</title>
+    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="../../three.js/examples/vendor/three.js/examples/js/loaders/GLTFLoader.js"></script>
+    <script>
+        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+    </script>
+</head>
+
+<body style='margin: 0; overflow: hidden;'>
+    <a-scene
+        vr-mode-ui="enabled: false"
+		embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+        <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+        <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+
+        <!-- <a-entity gps-entity-place="latitude: 8.7436701; longitude: 45.0970509;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+        <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/ata/file.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+        <!-- <a-entity gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" gltf-model="./assets/ata/deney.usdz" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/> -->
+        <a-camera gps-camera rotation-reader></a-camera>
+
+        <!-- matteo coors -->
+        <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970490; longitude: 8.7436095;" animation-mixer/> -->
+        <a-entity gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970196; longitude: 8.7437325;" animation-mixer/>
+        <!-- <a-entity gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0968255; longitude: 8.7436986;" animation-mixer/> -->
+        <a-entity gltf-model="./assets/ata/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970525; longitude: 8.743560;" animation-mixer/>
+        <a-entity gltf-model="./assets/ata/scene1.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970525; longitude: 8.743560;" animation-mixer/>
+        <a-entity gltf-model="./assets/ata/scene.bin" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970525; longitude: 8.743560;" animation-mixer/>
+        <a-entity gltf-model="./assets/ata/scene1.bin" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970525; longitude: 8.743560;" animation-mixer/>
+        <a-scene  embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline>
+
+        <a-assets>
+          <a-asset-item id="mymodel" src="./assets/ata/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-marker type='pattern' url='../../data/data/patt.hiro' size='1'>
+          <a-entity scale="1 1 1">
+            <a-entity mmd='outline: true' afterglow:2.0;>
+              <a-entity scale="1 1 1" gltf-model="#mymodel"></a-entity>
+            </a-entity>
+          </a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+
+        <!-- <a-entity gltf-model="./assets/ata/file.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
+        <!-- <a-entity gltf-model="./assets/ata/deney.usdz" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
+
+
+        <!-- ata coors -->
+        <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 40.7258690; longitude: -73.9788060;" animation-mixer/> -->
+        <!-- <a-entity gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude:  40.7258690; longitude: -73.9788060;" animation-mixer/> -->
+
+        <!-- gem coors -->
+        <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 52.5359569; longitude: 13.4231197;" animation-mixer/> -->
+        <!-- <a-entity gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 52.5359514; longitude: 13.4231656;" animation-mixer/> -->
+        <!-- <a-entity gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 52.5359600; longitude: 13.4231462;" animation-mixer/> -->
+
+  </a-scene>
+</body>
