@@ -37,22 +37,22 @@
         <a-entity gltf-model="./assets/ata/scene1.bin" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970525; longitude: 8.743560;" animation-mixer/>
 
 
-         <a-scene  embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline>
-          <a-assets>
-            <a-asset-item id="mymodel" src="./assets/articuno/scene.gltf"></a-asset-item>
-          </a-assets>
-          <a-marker type='pattern' url='../../data/data/patt.hiro' size='1'>
-            <a-entity scale="0.08 0.08 0.08">
-              <a-entity mmd='outline: true' afterglow:2.0;>
-                <a-entity scale="0.03 0.03 0.03" gltf-model="#mymodel"></a-entity>
-              </a-entity>
-            </a-entity>
-          </a-marker>
-          <a-entity camera></a-entity>
-        </a-scene> -->
+
         <!-- <a-scene  embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline> --> -->
 
-
+        <a-scene  embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline>
+         <a-assets>
+           <a-asset-item id="mymodel" src="./assets/articuno/scene.gltf"></a-asset-item>
+         </a-assets>
+         <a-marker type='pattern' url='../../data/data/patt.hiro' size='1'>
+           <a-entity scale="0.08 0.08 0.08">
+             <a-entity mmd='outline: true' afterglow:2.0;>
+               <a-entity scale="0.03 0.03 0.03" gltf-model="#mymodel"></a-entity>
+             </a-entity>
+           </a-entity>
+         </a-marker>
+         <a-entity camera></a-entity>
+       </a-scene>
         <!-- <a-entity gltf-model="./assets/ata/file.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
         <!-- <a-entity gltf-model="./assets/ata/deney.usdz" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 45.0970509; longitude: 8.7436701;" animation-mixer/> -->
 
