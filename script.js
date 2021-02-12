@@ -43,7 +43,25 @@ var models = [
         url: './assets/ata/scene.gltf',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
-        info: 'Ataberk Friend Stature',
+        info: 'Ataberk Friend1 Stature',
+    },
+    {
+        url: './assets/ata/scene.bin',
+        scale: '0.08 0.08 0.08',
+        rotation: '0 180 0',
+        info: 'Ataberk Friend2 Stature',
+    },
+    {
+        url: './assets/ata/scene1.bin',
+        scale: '0.08 0.08 0.08',
+        rotation: '0 180 0',
+        info: 'Ataberk Friend3 Stature',
+    },
+    {
+        url: './assets/ata/scene1.gltf',
+        scale: '0.08 0.08 0.08',
+        rotation: '0 180 0',
+        info: 'Ataberk Friend4 Stature',
     },
 ];
 
