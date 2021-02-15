@@ -44,6 +44,12 @@ var models = [
         scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Ataberk Friend1 Stature',
+    },
+    {
+        url: './assets/ata/scene1.gltf',
+        scale: '1 1 1',
+        rotation: '0 180 0',
+        info: 'Ataberk Friend2 Stature',
     }
 ];
 
