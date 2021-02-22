@@ -52,7 +52,7 @@ var models = [
         info: 'Ataberk Friend2 Stature',
     },
     {
-        url: './assets/ata/pink.gltf',
+        url: './assets/ata/animated.gltf',
         scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Horns Stature',
