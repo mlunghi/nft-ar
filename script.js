@@ -50,6 +50,12 @@ var models = [
         scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Ataberk Friend2 Stature',
+    },
+    {
+        url: './assets/ata/horns.gltf',
+        scale: '1 1 1',
+        rotation: '0 180 0',
+        info: 'Horns Stature',
     }
 ];
 
