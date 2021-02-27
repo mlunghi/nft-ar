@@ -89,10 +89,14 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
+        let image = document.createElement('a-image');
+        image.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
         setModel(models[modelIndex], model);
+        setModel(models[modelIndex], image);
 
         model.setAttribute('animation-mixer', '');
+        image.setAttribute('animation-mixer', '');
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
             var entity = document.querySelector('[gps-entity-place]');
@@ -102,5 +106,6 @@ function renderPlaces(places) {
         });
 
         scene.appendChild(model);
+        scene.appendChild(image);
     });
 }
