@@ -21,54 +21,54 @@ function staticLoadPlaces() {
 }
 
 var models = [
-    {
-        url: './assets/magnemite/scene.gltf',
-        scale: '0.8 0.8 0.8',
-        info: 'Magnemite, Lv. 5, HP 10/10',
-        rotation: '0 180 0',
-    },
-    {
-        url: './assets/articuno/scene.gltf',
-        scale: '0.8 0.8 0.8',
-        rotation: '0 180 0',
-        info: 'Articuno, Lv. 80, HP 100/100',
-    },
-    {
-        url: './assets/dragonite/scene.gltf',
-        scale: '0.08 0.08 0.08',
-        rotation: '0 180 0',
-        info: 'Dragonite, Lv. 99, HP 150/150',
-    },
-    {
-        url: './assets/ata/scene.gltf',
-        scale: '1 1 1',
-        rotation: '0 180 0',
-        info: 'Ataberk Friend1 Stature',
-    },
-    {
-        url: './assets/ata/scene1.gltf',
-        scale: '1 1 1',
-        rotation: '0 180 0',
-        info: 'Ataberk Friend2 Stature',
-    },
-    {
-        url: './assets/ata/pink.gltf',
-        scale: '1 1 1',
-        rotation: '0 180 0',
-        info: 'Horns Stature',
-    },
-    {
-        url: './assets/ata/animated.gltf',
-        scale: '1 1 1',
-        rotation: '0 180 0',
-        info: 'Horns Stature',
-    },
-    {
-        url: './assets/ata/horns.gltf',
-        scale: '1 1 1',
-        rotation: '0 180 0',
-        info: 'Horns Stature',
-    }
+    // {
+    //     url: './assets/magnemite/scene.gltf',
+    //     scale: '0.8 0.8 0.8',
+    //     info: 'Magnemite, Lv. 5, HP 10/10',
+    //     rotation: '0 180 0',
+    // },
+    // {
+    //     url: './assets/articuno/scene.gltf',
+    //     scale: '0.8 0.8 0.8',
+    //     rotation: '0 180 0',
+    //     info: 'Articuno, Lv. 80, HP 100/100',
+    // },
+    // {
+    //     url: './assets/dragonite/scene.gltf',
+    //     scale: '0.08 0.08 0.08',
+    //     rotation: '0 180 0',
+    //     info: 'Dragonite, Lv. 99, HP 150/150',
+    // },
+    // {
+    //     url: './assets/ata/scene.gltf',
+    //     scale: '1 1 1',
+    //     rotation: '0 180 0',
+    //     info: 'Ataberk Friend1 Stature',
+    // },
+    // {
+    //     url: './assets/ata/scene1.gltf',
+    //     scale: '1 1 1',
+    //     rotation: '0 180 0',
+    //     info: 'Ataberk Friend2 Stature',
+    // },
+    // {
+    //     url: './assets/ata/pink.gltf',
+    //     scale: '1 1 1',
+    //     rotation: '0 180 0',
+    //     info: 'Horns Stature',
+    // },
+    // {
+    //     url: './assets/ata/animated.gltf',
+    //     scale: '1 1 1',
+    //     rotation: '0 180 0',
+    //     info: 'Horns Stature',
+    // },
+    // {
+    //     url: './assets/ata/horns.gltf',
+    //     scale: '1 1 1',
+    //     rotation: '0 180 0',
+    //     info: 'Horns Stature',
+    // }
 ];
 
 var modelIndex = 0;
