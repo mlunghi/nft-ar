@@ -56,6 +56,18 @@ var models = [
         scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Horns Stature',
+    },
+    {
+        url: './assets/ata/animated.gltf',
+        scale: '1 1 1',
+        rotation: '0 180 0',
+        info: 'Horns Stature',
+    },
+    {
+        url: './assets/ata/horns.gltf',
+        scale: '1 1 1',
+        rotation: '0 180 0',
+        info: 'Horns Stature',
     }
 ];
 
