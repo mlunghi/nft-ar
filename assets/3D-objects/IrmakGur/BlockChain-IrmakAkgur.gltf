@@ -1,0 +1,375 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.4.40",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Camera",
+            "rotation" : [
+                -0.5171100497245789,
+                0.22767393290996552,
+                -0.14493641257286072,
+                -0.8122531771659851
+            ],
+            "translation" : [
+                -1.0502071380615234,
+                3.7767510414123535,
+                6.659111022949219
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Torus.001",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                -0.14640037715435028,
+                -0.14640037715435028,
+                -0.14640037715435028
+            ],
+            "translation" : [
+                -10,
+                0,
+                0
+            ]
+        },
+        {
+            "name" : "BezierCircle",
+            "scale" : [
+                3.3550643920898438,
+                3.3550643920898438,
+                3.3550643920898438
+            ],
+            "translation" : [
+                2.0572972297668457,
+                0,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Cube.001",
+            "scale" : [
+                1.1196345090866089,
+                1.1196345090866089,
+                1.1196345090866089
+            ],
+            "translation" : [
+                1.8311681747436523,
+                1.3381340503692627,
+                2.172090530395508
+            ]
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "translation"
+                    }
+                }
+            ],
+            "name" : "Torus.001Action",
+            "samplers" : [
+                {
+                    "input" : 8,
+                    "interpolation" : "LINEAR",
+                    "output" : 9
+                }
+            ]
+        },
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 3,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 3,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "Cube.001Action",
+            "samplers" : [
+                {
+                    "input" : 10,
+                    "interpolation" : "STEP",
+                    "output" : 11
+                },
+                {
+                    "input" : 8,
+                    "interpolation" : "LINEAR",
+                    "output" : 12
+                }
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "roughnessFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.7653236389160156,
+                    0.37260621786117554,
+                    0.8000000715255737,
+                    1
+                ],
+                "roughnessFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Torus.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4644864,
+            "max" : [
+                277.0874328613281,
+                1.235302448272705,
+                1.2353025674819946
+            ],
+            "min" : [
+                -2.5957748889923096,
+                -1.235302448272705,
+                -1.2353026866912842
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4644864,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4644864,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 6967296,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 6291456,
+            "max" : [
+                0.9989666938781738,
+                0.9989666938781738,
+                0.9989666938781738
+            ],
+            "min" : [
+                -0.9989666938781738,
+                -0.9989666938781738,
+                -0.9989666938781738
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 6291456,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 6291456,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5125,
+            "count" : 9437184,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 251,
+            "max" : [
+                10.416666666666666
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 251,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 1,
+            "max" : [
+                0
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 251,
+            "type" : "VEC4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 55738368,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 55738368,
+            "byteOffset" : 55738368
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 37158912,
+            "byteOffset" : 111476736
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27869184,
+            "byteOffset" : 148635648
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 75497472,
+            "byteOffset" : 176504832
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 75497472,
+            "byteOffset" : 252002304
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 50331648,
+            "byteOffset" : 327499776
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 37748736,
+            "byteOffset" : 377831424
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1004,
+            "byteOffset" : 415580160
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3012,
+            "byteOffset" : 415581164
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4,
+            "byteOffset" : 415584176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 415584180
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4016,
+            "byteOffset" : 415584192
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 415588208,
+            "uri" : "Block Chain.bin"
+        }
+    ]
+}
