@@ -7,6 +7,19 @@ window.onload = () => {
     renderPlaces(places);
 };
 
+
+
+//-------------PROPOSED CHANGES----------------
+
+//var user = navigator.geolocation
+
+//window.onChange = () => {
+    //renderPlaces(places);
+//};
+
+
+
+
 function staticLoadPlaces() {
     return [
         {
@@ -94,30 +107,38 @@ var setModel = function (model, entity) {
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
-    places.forEach((place) => {
-        let latitude = place.location.lat;
-        let longitude = place.location.lng;
+        places.forEach((place) => {
+            let latitude = place.location.lat;
+            let longitude = place.location.lng;
+        
+            
+            //--------PROPOSED CHANGES ------------
+            
+            //if (user.pos == place.location) {
+            
+                let model = document.createElement('a-entity');
+                model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
-        let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                let image = document.createElement('a-image');
+                image.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
-        let image = document.createElement('a-image');
-        image.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                setModel(models[modelIndex], model);
+                setModel(models[modelIndex], image);
 
-        setModel(models[modelIndex], model);
-        setModel(models[modelIndex], image);
+                model.setAttribute('animation-mixer', '');
+                image.setAttribute('animation-mixer', '');
 
-        model.setAttribute('animation-mixer', '');
-        image.setAttribute('animation-mixer', '');
+                document.querySelector('button[data-action="change"]').addEventListener('click', function () {
+                    var entity = document.querySelector('[gps-entity-place]');
+                    modelIndex++;
+                    var newIndex = modelIndex % models.length;
+                    setModel(models[newIndex], entity);
+                });
 
-        document.querySelector('button[data-action="change"]').addEventListener('click', function () {
-            var entity = document.querySelector('[gps-entity-place]');
-            modelIndex++;
-            var newIndex = modelIndex % models.length;
-            setModel(models[newIndex], entity);
-        });
-
-        scene.appendChild(model);
-        scene.appendChild(image);
+                scene.appendChild(model);
+                scene.appendChild(image);
+            
+            //}
+        
     });
 }
