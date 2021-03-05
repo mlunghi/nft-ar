@@ -11,7 +11,17 @@ window.onload = () => {
 
 //-------------PROPOSED CHANGES----------------
 
-//var user = navigator.geolocation
+var geo = navigator.geolocation;
+var userPos;
+
+geo.getCurrentPosition((position) => {
+	userPos = position.coords;
+});
+
+setTimeout(function() {
+	console.log(userPos.latitude);
+	console.log(userPos.longitude);
+}, 1600);
 
 //window.onChange = () => {
     //renderPlaces(places);
